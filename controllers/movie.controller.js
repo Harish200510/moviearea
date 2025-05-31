@@ -3,7 +3,12 @@ export const MovieIndex=(req,res)=>{
 }
 
 export const MovieCreate=(req,res)=>{
-    res.send("Movie Created Successfully!")
+     //id,title,description
+     console.log(req.body);
+
+     
+     return res.json(req.body)
+
 }
 export const MovieUpdate=(req,res)=>{
     res.send("Movie Updated Successfully!")
